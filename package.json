@@ -1,0 +1,16 @@
+{
+  "name": "todoeth",
+  "version": "1.0.0",
+  "description": "Crossing Over to Web3 - Example Project - Todoeth",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukehedger/todoeth.git"
+  },
+  "author": "Luke Hedger (luke@jaak.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukehedger/todoeth/issues"
+  },
+  "homepage": "https://github.com/lukehedger/todoeth#readme"
+}
