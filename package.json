@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Crossing Over to Web3 - Example Project - Todoeth",
   "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lukehedger/todoeth.git"
@@ -12,5 +16,30 @@
   "bugs": {
     "url": "https://github.com/lukehedger/todoeth/issues"
   },
-  "homepage": "https://github.com/lukehedger/todoeth#readme"
+  "homepage": "https://github.com/lukehedger/todoeth#readme",
+  "scripts": {
+    "blockchain": "ganache-cli",
+    "compile": "sulk --config ./config/sulk.config.js",
+    "deploy": "node scripts/deploy-contracts.js --config ./config/contracts.deploy.config.js --rpc development",
+    "lint": "solium --dir contracts",
+    "remix": "remixd -S $(pwd)/contracts",
+    "start": "live-server app",
+    "test": "jest"
+  },
+  "dependencies": {
+    "date-fns": "^1.29.0",
+    "web3": "^1.0.0-beta.18"
+  },
+  "devDependencies": {
+    "chalk": "^2.0.1",
+    "fs-extra": "^4.0.1",
+    "ganache-cli": "^6.0.3",
+    "jest": "^20.0.4",
+    "live-server": "^1.2.0",
+    "remixd": "^0.1.2",
+    "solium": "^1.0.5",
+    "sulk": "0.0.4",
+    "swarmhash": "^0.1.0",
+    "yargs": "^8.0.2"
+  }
 }
