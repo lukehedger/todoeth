@@ -19,23 +19,25 @@
   "homepage": "https://github.com/lukehedger/todoeth#readme",
   "scripts": {
     "blockchain": "ganache-cli",
+    "build": "parcel build app/index.html",
     "compile": "sulk --config ./config/sulk.config.js",
     "deploy": "node scripts/deploy-contracts.js --config ./config/contracts.deploy.config.js --rpc development",
     "lint": "solium --dir contracts",
     "remix": "remixd -S $(pwd)/contracts",
-    "start": "live-server app",
+    "start": "parcel app/index.html",
     "test": "jest"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "date-fns": "^1.29.0",
-    "web3": "^1.0.0-beta.18"
+    "web3": "^1.0.0-beta.26"
   },
   "devDependencies": {
     "chalk": "^2.0.1",
     "fs-extra": "^4.0.1",
     "ganache-cli": "^6.0.3",
     "jest": "^20.0.4",
-    "live-server": "^1.2.0",
+    "parcel-bundler": "^1.6.2",
     "remixd": "^0.1.2",
     "solium": "^1.0.5",
     "sulk": "0.0.4",

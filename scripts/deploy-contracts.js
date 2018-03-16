@@ -62,7 +62,6 @@ const deployContracts = (async () => {
       .send({ from: opts.fromAccount, gasLimit: opts.gasLimit })
 
     // get TodoBank contract address
-    // TODO - which of these actually works?
     const todoBankAddress = todoBank.options.address
 
     // create TodoStorage contract instance

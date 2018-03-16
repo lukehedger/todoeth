@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+hr {
+  width: 200px;
+  margin-top: 32px;
+}
+
+main {
+  padding: 16px;
+}
+
+section {
+  margin: 16px 0;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.logo {
+  width: 100px;
+  height: 81px;
+  max-width: 100%;
+  margin: 0 auto;
+  background: url("./logo.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+.title {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  font-size: 18px;
+  text-align: center;
+  color: #F08F74;
+}
+
+.stake {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  display: inline-block;
+  border-radius: 50%;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #102026;
+}
+
+.stake:after {
+  content: "Ξ";
+  font-style: italic;
+}
+
+.stake-label {
+  font-weight: bold;
+  color: #828282;
+}
+
+.inputTodo {
+  width: 210px;
+  margin: 32px auto 16px;
+  padding: 8px;
+  border: 0;
+  border-radius: 2px;
+  display: block;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.addTodo {
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #F08F74;
+  cursor: pointer;
+  outline: none;
+}

@@ -16,3 +16,8 @@ Thumbs.db
 # Dependencies #
 ######################
 node_modules/
+
+# Release #
+######################
+.cache/
+dist/

@@ -45,7 +45,7 @@ module.exports = {
    * Deployed contract output file banner
    * @type {String}
    */
-  outputString: "import web3 from '../web3'\n\n",
+  outputString: "import web3 from '../js/web3'\n\n",
 
   /**
    * RPC endpoints to use when deploying contracts
